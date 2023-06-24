@@ -26,6 +26,7 @@ color: transparent;
     border: 2px solid white;
     padding: 14px 50px;
     margin-top: 10px;
+    transition: 0.5s;
 }
 
 .content a:hover{
@@ -48,4 +49,20 @@ color: transparent;
     bottom: 0;
     right: 0;
     z-index: -1;
+
+    @media (min-aspect-ratio: 16/9) {
+        .back-video {
+            width: 100%;
+            height: auto;
+        }
+    }
+       
+        
+    @media (max-aspect-ratio: 16/9) {
+            .back-video {
+                width: auto;
+                height: 100%;
+            }
+        
+    }
 }
