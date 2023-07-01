@@ -1,0 +1,1 @@
+This is just me trying out web design with html, css and js. I have been learning for quite a while. I am still learning. On my way to 100 tasks before I commence my Alx S.E course at 12th, August
