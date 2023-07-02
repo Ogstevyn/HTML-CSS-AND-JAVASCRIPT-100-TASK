@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #FBAB7E, #F7CE68);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+ text-decoration: none;
+ color: white;
+ background-color: black;
+ padding: 2rem 5rem;
+ position: relative;
+}
+a::before{
+    content: "HEY";
+    background-color: blue;
+    color: bisque;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a::after{
+    content: "OK, BYE";
+    background-color: skyblue;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: rotateX(-270deg);
+    transform-origin: top;
+    transition: all 1s;
+    transition-delay: 0.5s; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a:hover::before,
+a:hover::after{
+    transform: rotateX(0);
+}
